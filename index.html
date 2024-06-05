@@ -1,0 +1,414 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+  <meta name="description" content="Portfolio website | Web Developer in training >
+  <meta name="keywords" content="Html css js">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="IZ7Sm227j_9N0Sy_JmwOvn1_OAm_O2rHr2833ZV0Fro">
+  <title>Maulana Amri Hasan</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento" rel="stylesheet">
+  <link rel="shortcut icon" href="Icon.jpg" type="jpg/png">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <meta name="Portfolio" content="Maulana Amri | Junior Web Development">
+ <meta itemprop="description" content="Web Developer in training | Junior Web Development">
+ <meta name="application-name" content="Portfolio Website">
+ <meta property="og:site_name" content="">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://maulanaamri.vercel.app">
+ <meta property="og:title" content="Maulana Amri Hasan">
+ <meta property="og:description" content="Junior Web Development | Web Developer in training">
+ <meta name="language" content="English">  
+<meta property="og:image" content="https://wallpapers.com/images/high/anonymous-barcode-meme-zixvwy0pbto8njgp.webp">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<style>
+      @keyframes changeText {
+      0%, 100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      25%, 75% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+     #myHeading, #myParagraph {
+    opacity: 1;
+    transition: opacity 0.5s;
+    font-family: "Poppins", sans-serif;
+  }
+     
+   #splide-container {
+  margin: auto;
+  border: 2px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 9px;
+  width: fit-content;
+  position: relative;
+}
+
+.splide__slide img {
+  width: 310px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.splide__arrow {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.splide__arrow--prev {
+  left: 10px;
+}
+
+.splide__arrow--next {
+  right: 10px;
+}
+    
+.icon-container {
+    display: flex;
+    background-color: #444;
+    padding: 4rem 0;
+    border: 2px solid #ddd;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      border-radius: 9px;
+    flex-direction: column;
+    gap: 15px; 
+    margin-top: 20px;
+    align-items: center;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 260px; 
+    height: 195px;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 9px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-align: center;
+    background-color: #f0f0e6;
+}
+
+.icon-box i {
+    font-size: 39px; 
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.icon-box:active {
+    transform: scale(0.9);
+}
+
+.icon-box p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: #444; 
+    word-wrap: break-word;
+}
+
+@media (min-width: 768px) {
+    .icon-container {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; 
+    }
+
+    .icon-box {
+        flex: 1 1 260px; 
+        max-width: 250px; 
+        margin: 10px;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .icon-container {
+        gap: 15px; 
+    }
+
+    .icon-box {
+        flex: 1 1 220px;
+        max-width: 220px; 
+        margin: 10px;
+    }
+}
+   
+  </style>
+</head>
+
+<body>
+ 
+ <header class="header">
+  <nav class="navbar">
+    <div class="navbar-container container">
+      <h1 class="navbar-brand">yvngamr &lt;/&gt;</h1>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="menu-items">
+        <li><a href="#about">About</a></li>
+        <li><a href="#my-skill">Skill</a></li>
+        <li><a href="#my-works">Portfolio</a></li>
+        <li><a href="#contact-me">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+    <div class="home-content" id="home-page">
+      <div class="name">
+      <h1 id="myHeading"></h1>
+       <p id="myParagraph"></p>
+      </div>
+      <div class="angle-down-icon">
+        <a href="#about"><i class="fas fa-angle-down"></i></a>
+      </div>
+    </div>
+  </header>
+  <section class="about-me" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="left-content">
+          <div>
+           <h1 class="about-heading">About Me</h1>
+          </div> 
+          <img src="profile.jpg" alt="Lo nyolong lo burut" />
+          </div>
+          <p style="margin-top: 10px;">
+            I am 19 years old, nice to meet you. I am from Indonesia. My goal in creating this website is to hone my skills in a field I am passionate about. I thoroughly enjoy learning new things in the realm of knowledge; my curiosity always surges when positive aspects remain unexplored.
+          </p>
+          <br>
+          <p style="margin-bottom: 1px;">I have created several projects, with the description of these projects, I hope those of you reading can understand what front-end.</p>
+        <div id="splide-container" class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tWXDRcuzfBcvfxlwKWpAoDRNA8II6qK75mFZrbyNaJD4PYXv-1M72OYf&s=10" alt=""></li>
+      <li class="splide__slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS47nz-s2qUR-5DHMmY6O7gzGbjLn1tvSd7ZgawhbKn7IMf7BiKkRXWlQ9t&s=10" alt=""></li>
+      <li class="splide__slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQJKtRrnkWhW1xZSE5d-6zarfOCTVJQsb8fGEsioBm_NbeHCyoexSFss86&s=10" alt=""></li>
+      <li class="splide__slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYd0a6fgLk6Kn4zhM0_v6D5V8im2nTwyp8ZA&usqp=CAU" alt=""></li>
+      <!-- Tambahkan lebih banyak elemen li sesuai dengan jumlah gambar yang ingin Anda tampilkan -->
+    </ul>
+  </div>
+  <div class="splide__arrows">
+    <button class="splide__arrow splide__arrow--prev">&lt;</button>
+    <button class="splide__arrow splide__arrow--next">&gt;</button>
+  </div>
+</div>
+  <p style="margin-top: 10px;"> I learned the basic things about front-end and back programming languages, namely HTML CSS JAVASCRIPT and REACT JS, I'm still learning it step by step.</p>
+  </div>
+     </div>
+      <section id="my-skill">
+       <div class="skills">
+  <div class="right-content">
+    <div>
+      <h1 class="skills-heading">My Code Skills</h1>
+    </div>
+   
+    <div class="skills-bar">
+      <div class="skill-container">
+        <div class="bar">
+          <div class="info">
+            <span>HTML</span>
+          </div>
+          <div class="progress-line"><span class="html"></span></div>
+        </div>
+      </div>
+      <div class="skill-container">
+        <div class="bar">
+          <div class="info">
+            <span>CSS</span>
+          </div>
+          <div class="progress-line"><span class="css"></span></div>
+        </div>
+      </div>
+      <div class="skill-container">
+        <div class="bar">
+          <div class="info">
+            <span>JAVASCRIPT</span>
+          </div>
+          <div class="progress-line"><span class="javascript"></span></div>
+        </div>
+      </div>
+       <div class="skill-container">
+        <div class="bar">
+          <div class="info">
+            <span>REACT JS</span>
+          </div>
+          <div class="progress-line"><span class="reactjs"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<h1 class="skills-heading" style ="font-size: 2rem; text-align: center; color: #444;">What I Can?</h1>
+<div style="margin-top: 10px; font-size: 1.6rem; text-align: center; padding: 0 2.3rem">
+    Here, I will share my skills, experience and contributions I can make. With a diverse background and a strong desire to continue learning, I am ready to face the various challenges and opportunities that lie ahead.
+</div>
+<div class="icon-container">
+    <div class="icon-box">
+        <i class="fas fa-book"></i>
+        <p>Illustrator for art UI/UX</p>
+    </div>
+    <div class="icon-box">
+        <i class="fa fa-edit"></i>
+        <p>Editing code for website design</p>
+    </div>
+    <div class="icon-box">
+        <i class="fas fa-microphone"></i>
+        <p>Public speaker</p>
+    </div>
+    <div class="icon-box">
+        <i class="fas fa-code"></i>
+        <p>Writing some code and learn</p>
+    </div>
+    <div class="icon-box">
+        <i class="fas fa-fix"></i>
+        <p>Writing some code and learn</p>
+    </div>
+</div>
+</section>
+
+<h1 class="skills-heading" style ="font-size: 2rem; text-align: center; color: #444; margin-top: 45px;">My Experience</h1>
+<br>
+<section id="experience">
+        <div class="experience-container">
+            <div class="experience-item">
+                <h3>Web Designer</h3>
+                <p class="date">Oct 2022-present</p>
+                <p>I started it because it was to fill my free time and over time it became a hobby until now, even though I'm still learning, there's no harm in always trying.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Courses Online</h3>
+                <p class="date">Mei 2023-present</p>
+                <p>I studying online front end developer courses on various platforms such as skilvul, codeacademy, dicoding.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Community of Web Developer </h3>
+                <p class="date">November 2023-present</p>
+                <p>I follow the Web Developer community from Telegram and Facebook.</p>
+            </div>
+             <div class="experience-item">
+                <h3>Job Online </h3>
+                <p class="date">September 2023-present</p>
+                <p>I provide services for creating websites, landing pages, portfolios for individual groups or organizations</p>
+            </div>
+        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+<div class="scroll-down-text">
+  <a href="#my-works" class="scroll-link">
+    <p class="scroll-text">See my a bit project:)</p>
+    <i class="fas fa-angle-down scroll-icon"></i>
+  </a>
+</div>
+
+  <section id="my-works">
+    <div class="portfolio">
+      <div class="proj-heading">
+        <h1>Portfolio</h1>
+      </div>
+      <div class="portfolio-content container">
+        <div class="proj-1">
+          <img src="project 1.jpg">
+          <div class="proj1-details">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <h2>Todo List Online</h2>
+            <p>Build Using HTML,CSS,JS</p>
+           
+            <button><a href="https://codepen.io/Maulana-Amri-h/pen/jOJEMKE" target="blank">Try it Live <i
+              class="fas fa-external-link-alt"></i></a>
+          </button>
+          </div>
+        </div>
+        
+        <div class="proj-2">
+          <img src="project 2.jpg">
+          <div class="proj2-details">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <h2>Bio Profile Link</h2>
+            <p>Build Using HTML,CSS</p>
+           
+            <button><a href="https://codepen.io/Maulana-Amri-h/pen/eYXmdPB" target="blank">Try it Live <i
+              class="fas fa-external-link-alt"></i></a>
+          </button>
+          </div>
+          
+        </div>
+        <div class="more-work">
+          <p>
+            More
+          </p>
+          <a href="https://codepen.io/Maulana-Amri-h" target="blank">CodePen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="contact" id="contact-me">
+    <div class="container">
+      <div class="contact-content">
+        <h2>Contact Me</h2>
+        <p class="mail">
+          Get in touch with me <i class="fas fa-arrow-right"></i> maulanaamrih@gmail.com
+        </p>
+        <p class="links">Or find me on:</p>
+        
+        <a href="https://codepen.io/Maulana-Amri-h" target="blank"><i class="fab fa-codepen"> CodePen</i></a>
+        <a href="https://t.me/thundercoding07" target="blank"><i class="fab fa-telegram"></i> Web Community</a>
+        <a href="https://www.instagram.com/yvngamr/" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+ 
+  <script src="script.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menuItems = document.querySelector('.menu-items');
+
+  menuToggle.addEventListener('click', function() {
+    menuItems.classList.toggle('active');
+  });
+});
+</script>
+</body>
+</html>

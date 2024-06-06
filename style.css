@@ -339,6 +339,7 @@ transition: background 0.3s ease;
 }
 
 #experience h2 {
+    margin-top: -20px;
     text-align: center;
     color: #333;
     margin-bottom: 20px;

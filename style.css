@@ -33,7 +33,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 500;
-  background-color: #444;
+  background-color: transparent;
   padding: 2rem 0;
   height: 55px auto;
   margin-bottom: 15px auto;

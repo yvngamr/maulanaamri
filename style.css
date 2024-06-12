@@ -58,11 +58,28 @@ header {
 }
 
 .menu-items {
+  margin-bottom: 5px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.3s ease; 
+  }
+
+.menu-items.active {
   display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-top: -20px;
-  padding: 0;
+}
+
+.menu-items.scrolled {
+  background-color: #444;
+}
+
+.menu-items::after {
+  background-color: #444;
 }
 
 .menu-items li {

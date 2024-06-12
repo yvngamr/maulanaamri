@@ -11,14 +11,15 @@ body {
 }
 
 header {
-  background: #444;
+  background-image: url('Amr.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
-color: #f0f0e6;
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-transition: background 0.3s ease;
+  color: #f0f0e6;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s ease;
 }
-
-
 
 .container {
   align-items: center;

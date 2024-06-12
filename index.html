@@ -433,6 +433,19 @@
 
   menuToggle.addEventListener('click', function() {
     menuItems.classList.toggle('active');
+    if (window.scrollY > 0) {
+      menuItems.classList.add('scrolled');
+    } else {
+      menuItems.classList.remove('scrolled');
+    }
+  });
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 0 && menuItems.classList.contains('active')) {
+      menuItems.classList.add('scrolled');
+    } else if (window.scrollY === 0) {
+      menuItems.classList.remove('scrolled');
+    }
   });
 });
 

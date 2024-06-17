@@ -263,19 +263,19 @@ header {
 }
 
 .progress-line .html {
-  width: 55%;
+  width: 45%;
 }
 .progress-line .css {
-  width: 50%;
+  width: 35%;
 }
 .progress-line .bootstrap {
-  width: 40%;
+  width: 30%;
 }
 .progress-line .javascript {
-  width: 40%;
+  width: 25%;
 }
 .progress-line .reactjs {
-  width: 30%;
+  width: 20%;
 }
 
 
@@ -303,22 +303,6 @@ header {
   background: #444;
   padding: 1px 8px;
   border-radius: 3px;
-}
-
-.progress-line .html::after {
-  content: "55%";
-}
-.progress-line .css::after {
-  content: "50%";
-}
-.progress-line .bootstrap::after {
-  content: "40%";
-}
-.progress-line .javascript::after {
-  content: "40%";
-}
-.progress-line .reactjs::after {
-  content: "30%";
 }
 
 .navbar.solid {

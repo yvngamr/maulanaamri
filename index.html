@@ -192,6 +192,49 @@
         margin: 10px;
     }
 }
+
+  .icon-box2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 2px; 
+    margin-top: 2px; 
+}
+
+.icon-box2-row {
+    display: flex;
+    flex-direction: row; 
+    gap: 2px;
+}
+
+.icon-box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 60px;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 9px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    background-color: #444;
+    color: #f0f0e6;
+    margin: 3px; 
+}
+
+.icon-box2 p {
+    color: white;
+    font-size: 16;
+}
+
+.icon-box2:active {
+    transform: translateY(4px) scale(0.9);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    border: 2px solid #aaa;
+  }
    
   </style>
 </head>
@@ -240,84 +283,26 @@
             I am 19 years old, nice to meet you. I am from Indonesia. My goal in creating this website is to hone my skills in a field I am passionate about. I thoroughly enjoy learning new things in the realm of knowledge; my curiosity always surges when positive aspects remain unexplored.
           </p>
           <br>
-          <br>
-        <div id="splide-container" class="splide">
-  <div class="splide__track">
-    <ul class="splide__list">
-      <li class="splide__slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tWXDRcuzfBcvfxlwKWpAoDRNA8II6qK75mFZrbyNaJD4PYXv-1M72OYf&s=10" alt=""></li>
-      <li class="splide__slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS47nz-s2qUR-5DHMmY6O7gzGbjLn1tvSd7ZgawhbKn7IMf7BiKkRXWlQ9t&s=10" alt=""></li>
-      <li class="splide__slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQJKtRrnkWhW1xZSE5d-6zarfOCTVJQsb8fGEsioBm_NbeHCyoexSFss86&s=10" alt=""></li>
-      <li class="splide__slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYd0a6fgLk6Kn4zhM0_v6D5V8im2nTwyp8ZA&usqp=CAU" alt=""></li>
-      <!-- Tambahkan lebih banyak elemen li sesuai dengan jumlah gambar yang ingin Anda tampilkan -->
-    </ul>
-  </div>
-  <div class="splide__arrows">
-    <button class="splide__arrow splide__arrow--prev">&lt;</button>
-    <button class="splide__arrow splide__arrow--next">&gt;</button>
-  </div>
-</div>
-  <p style="margin-top: 10px;"> I learned the basic things about front-end and back programming languages, namely HTML CSS JAVASCRIPT and REACT JS, I'm still learning it step by step.</p>
-  </div>
-     </div>
+      </div>
       <section id="my-skill">
-        <div id="splide-container" class="splide">
-  <div class="splide__track">
-    <ul class="splide__list">
-      <li class="splide__slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tWXDRcuzfBcvfxlwKWpAoDRNA8II6qK75mFZrbyNaJD4PYXv-1M72OYf&s=10" alt=""></li>
-      <li class="splide__slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS47nz-s2qUR-5DHMmY6O7gzGbjLn1tvSd7ZgawhbKn7IMf7BiKkRXWlQ9t&s=10" alt=""></li>
-      <li class="splide__slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQJKtRrnkWhW1xZSE5d-6zarfOCTVJQsb8fGEsioBm_NbeHCyoexSFss86&s=10" alt=""></li>
-      <li class="splide__slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYd0a6fgLk6Kn4zhM0_v6D5V8im2nTwyp8ZA&usqp=CAU" alt=""></li>
-      <!-- Tambahkan lebih banyak elemen li sesuai dengan jumlah gambar yang ingin Anda tampilkan -->
-    </ul>
-  </div>
-  <div class="splide__arrows">
-    <button class="splide__arrow splide__arrow--prev">&lt;</button>
-    <button class="splide__arrow splide__arrow--next">&gt;</button>
-  </div>
+        <div class="icon-box2-container">
+    <div class="icon-box2-row">
+        <div class="icon-box2">
+            <p>html</p>
+        </div>
+        <div class="icon-box2">
+            <p>html</p>
+        </div>
+    </div>
+    <div class="icon-box2-row">
+        <div class="icon-box2">
+            <p>html</p>
+        </div>
+        <div class="icon-box2">
+            <p>html</p>
+        </div>
+    </div>
 </div>
-  <p style="margin-top: 10px;"> I learned the basic things about front-end and back programming languages, namely HTML CSS JAVASCRIPT and REACT JS, I'm still learning it step by step.</p>
-  </div>
-      </div>
-       <div class="skills">
-  <div class="right-content">
-    <div>
-      <h1 class="skills-heading">My Code Skills</h1>
-    </div>
-
-    <div class="skills-bar">
-      <div class="skill-container">
-        <div class="bar">
-          <div class="info">
-            <span>HTML</span>
-          </div>
-          <div class="progress-line"><span class="html"></span></div>
-        </div>
-      </div>
-      <div class="skill-container">
-        <div class="bar">
-          <div class="info">
-            <span>CSS</span>
-          </div>
-          <div class="progress-line"><span class="css"></span></div>
-        </div>
-      </div>
-      <div class="skill-container">
-        <div class="bar">
-          <div class="info">
-            <span>JAVASCRIPT</span>
-          </div>
-          <div class="progress-line"><span class="javascript"></span></div>
-        </div>
-      </div>
-       <div class="skill-container">
-        <div class="bar">
-          <div class="info">
-            <span>REACT JS</span>
-          </div>
-          <div class="progress-line"><span class="reactjs"></span></div>
-        </div>
-      </div>
-    </div>
   </div>
       </div>
      

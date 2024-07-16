@@ -263,19 +263,19 @@ header {
 }
 
 .progress-line .html {
-  width: 45%;
+  width: 55%;
 }
 .progress-line .css {
-  width: 35%;
+  width: 50%;
 }
 .progress-line .bootstrap {
-  width: 30%;
+  width: 40%;
 }
 .progress-line .javascript {
-  width: 25%;
+  width: 40%;
 }
 .progress-line .reactjs {
-  width: 20%;
+  width: 30%;
 }
 
 
@@ -303,7 +303,23 @@ header {
   background: #444;
   padding: 1px 8px;
   border-radius: 3px;
+}
 
+.progress-line .html::after {
+  content: "55%";
+}
+.progress-line .css::after {
+  content: "50%";
+}
+.progress-line .bootstrap::after {
+  content: "40%";
+}
+.progress-line .javascript::after {
+  content: "40%";
+}
+.progress-line .reactjs::after {
+  content: "30%";
+}
 
 .navbar.solid {
   background-color: #444;
@@ -323,6 +339,7 @@ header {
   color: #f0f0e6;
   font-weight: 400;
 }
+
 
 /* Gaya untuk judul */
 #my-experience h1 {

@@ -238,6 +238,7 @@
 </head>
 
 <body>
+   <audio id="autoplayAudio" src="9convert.com - Ill Do It Sped Up.mp3" autoplay muted></audio>
  <div id="loading">
       <div class="loader"></div>
  </div>
@@ -498,5 +499,24 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
+    <script>
+      const audio = document.getElementById('autoplayAudio');
+
+        // Try to play the audio after a short delay to bypass some browser restrictions
+        const attemptPlay = () => {
+            audio.muted = false;
+            audio.play().catch(error => {
+                console.log('Autoplay was prevented by the browser:', error);
+            });
+        };
+
+        // Attempt to unmute and play the audio after a short delay
+        window.addEventListener('load', () => {
+            setTimeout(attemptPlay, 1000); // 1 second delay
+        });
+
+        // Add a user interaction event listener as a fallback
+        document.addEventListener('click', attemptPlay);
+    </script>
 </body>
 </html>

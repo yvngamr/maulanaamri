@@ -238,7 +238,7 @@
 </head>
 
 <body>
-   <audio id="autoplayAudio" src="9convert.com - Justin bieber.mp3" autoplay muted loop></audio>
+   <audio id="autoplayAudio" src="9convert.com - Justin Bieber.mp3" autoplay muted></audio>
  <div id="loading">
       <div class="loader"></div>
  </div>
@@ -279,12 +279,12 @@
           <img src="Amr.webp" alt="Lo nyolong lo burut" />
           </div>
           <p style="margin-top: 10px;">
-            I am 19 years old, good to see you. I am from Indonesia. My goal in creating this website is to hone my skills in a field I am passionate about Technology.
+            I am 19 years old, nice to meet you. I am from Indonesia. My goal in creating this website is to hone my skills in a field I am passionate about. I thoroughly enjoy learning new things in the realm of knowledge; my curiosity always surges when positive aspects remain unexplored.
           </p>
           <br>
-          <p style="margin-bottom: 10px;">I have created several projects, with the description of these projects.</p>
+          <p style="margin-bottom: 1px;">I have created several projects, with the description of these projects, I hope those of you reading can understand what front-end.</p>
  
-  <p style="margin-top: 1px;"> I learned the basic things about front-end and back programming languages, namely HTML CSS JAVASCRIPT and REACT JS, I'm still learning it step by step.</p>
+  <p style="margin-top: 10px;"> I learned the basic things about front-end and back programming languages, namely HTML CSS JAVASCRIPT and REACT JS, I'm still learning it step by step.</p>
   </div>
      </div>
     
@@ -501,28 +501,22 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
     <script>
       const audio = document.getElementById('autoplayAudio');
-audio.loop = true;
 
+        // Try to play the audio after a short delay to bypass some browser restrictions
+        const attemptPlay = () => {
+            audio.muted = false;
+            audio.play().catch(error => {
+                console.log('Autoplay was prevented by the browser:', error);
+            });
+        };
 
-const attemptPlay = () => {
-    audio.muted = false;
-    audio.play().then(() => {
-        clearInterval(playAttemptInterval); 
-    }).catch(error => {
-        console.log('Autoplay was prevented by the browser:', error);
-    });
-};
+        // Attempt to unmute and play the audio after a short delay
+        window.addEventListener('load', () => {
+            setTimeout(attemptPlay, 1000); // 1 second delay
+        });
 
-
-window.addEventListener('load', () => {
-    setTimeout(attemptPlay, 1000); // Coba memutar setelah 1 detik
-});
-
-
-document.addEventListener('click', attemptPlay);
-
-
-const playAttemptInterval = setInterval(attemptPlay, 3000);
+        // Add a user interaction event listener as a fallback
+        document.addEventListener('click', attemptPlay);
     </script>
 </body>
 </html>
